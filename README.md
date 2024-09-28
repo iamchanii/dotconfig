@@ -1,0 +1,3 @@
+# Dotconfig
+
+My personal `.config`
