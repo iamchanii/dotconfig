@@ -18,6 +18,7 @@
 	        pkgs.neovim
           pkgs.nodejs_22
           pkgs.pnpm
+          pkgs.cargo
         ];
 
       # Auto upgrade nix package and the daemon service.
@@ -61,13 +62,10 @@
     };
   in
   {
-    # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#ichanhuiui-MacBookPro
-    darwinConfigurations."ichanhuiui-MacBookPro" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."iamchanii" = nix-darwin.lib.darwinSystem {
       modules = [ configuration ];
     };
 
-    # Expose the package set, including overlays, for convenience.
-    darwinPackages = self.darwinConfigurations."ichanhuiui-MacBookPro".pkgs;
+    darwinPackages = self.darwinConfigurations."iamchanii".pkgs;
   };
 }
