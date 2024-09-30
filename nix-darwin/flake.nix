@@ -20,6 +20,11 @@
           pkgs.pnpm
           pkgs.cargo
         ];
+      
+      environment.shellAliases = {
+        vim = "nvim";
+        "update-system" = "darwin-rebuild switch --flake ~/.config/nix-darwin#iamchanii";
+      };
 
       # Auto upgrade nix package and the daemon service.
       services.nix-daemon.enable = true;
@@ -30,9 +35,6 @@
 
       # Create /etc/zshrc that loads the nix-darwin environment.
       programs.zsh.enable = true;  # default shell on catalina
-      programs.zsh.interactiveShellInit = ''
-        alias vim=nvim
-      '';
 
       # Set Git commit hash for darwin-version.
       system.configurationRevision = self.rev or self.dirtyRev or null;
@@ -53,6 +55,7 @@
       homebrew.brews = [
         "starship"
         "gh"
+        "pinentry"
       ];
 
       homebrew.casks = [
