@@ -1,7 +1,5 @@
-**/*
+*
+!nix-darwin/
+!wezterm/
+!nvim/
 !README.md
-!gh/**/*
-!nix-darwin/**/*
-!nix/**/*
-!nvim/**/*
-!wezterm/**/*
