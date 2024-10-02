@@ -38,6 +38,10 @@
       viAlias = true;
       vimAlias = true;
     };
+
+    ripgrep = {
+      enable = true;
+    };
   };
 
   home.packages =
