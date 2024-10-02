@@ -18,6 +18,7 @@ $ git clone https://github.com/iamchanii/dotconfig ~/.config
 Install nix-darwin. Follow the command below:
 
 ```
-$ nix run nix-darwin -- switch --flake ~/.config/nix-darwin#iamchanii
+$ nix run nix-darwin -- switch --flake ~/.config/nix#iamchanii
 ```
+
 
