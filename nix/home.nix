@@ -16,6 +16,7 @@
       switch = "darwin-rebuild switch --flake ~/.config/nix#${user}";
       vim = "nvim";
     };
+    initExtra = (builtins.readFile ./dotfiles/zshrc);
   };
 
   programs.home-manager.enable = true;
