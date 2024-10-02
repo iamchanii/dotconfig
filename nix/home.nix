@@ -7,7 +7,7 @@
     EDITOR = "vim";
   };
 
-  home.file.".zshrc".source = ./dotfiles/zshrc;
+  # home.file.".zshrc".source = ./dotfiles/zshrc;
 
   programs.zsh = {
     enable = true;
