@@ -42,7 +42,7 @@
       };
     in
     {
-      darwinConfigurations."$HOSTNAME" = nix-darwin.lib.darwinSystem {
+      darwinConfigurations."$HOST" = nix-darwin.lib.darwinSystem {
         modules = [
           configuration
           ./darwin.nix
