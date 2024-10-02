@@ -18,9 +18,6 @@ $ git clone https://github.com/iamchanii/dotconfig ~/.config
 Install nix-darwin. Follow the command below:
 
 ```
-# Ref: https://github.com/LnL7/nix-darwin?tab=readme-ov-file#step-2-installing-nix-darwin
 $ nix run nix-darwin -- switch --flake ~/.config/nix-darwin#iamchanii
 ```
-## Limitation
 
-- Currently, I don't know how to set `~/.zshrc` file via Nix configuration correctly, So have to modify `.zshrc` to init starship shell manually.
