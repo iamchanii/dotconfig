@@ -15,8 +15,6 @@
 
   outputs = inputs@{ self, nix-darwin, home-manager, nixpkgs }:
     let
-      user = "iamchanii";
-
       configuration = { pkgs, ... }: {
         # Auto upgrade nix package and the daemon service.
         services.nix-daemon.enable = true;
@@ -36,16 +34,26 @@
 
         # The platform the configuration will be used on.
         nixpkgs.hostPlatform = "aarch64-darwin";
+
+        users.users."$USER" = {
+          name = "$USER";
+          home = "/Users/$USER";
+        };
       };
     in
     {
-      darwinConfigurations.${user} = nix-darwin.lib.darwinSystem {
+      darwinConfigurations."$HOSTNAME" = nix-darwin.lib.darwinSystem {
         modules = [
           configuration
           ./darwin.nix
+          home-manager.darwinModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.verbose = true;
+            home-manager.users."$USER" = import ./home.nix;
+          }
         ];
       };
-
-      darwinPackages = self.darwinConfigurations.${user}.pkgs;
     };
 }

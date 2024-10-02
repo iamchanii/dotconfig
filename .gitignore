@@ -1,5 +1,6 @@
 *
-!nix-darwin/
-!wezterm/
-!nvim/
+!nix/**
+!wezterm/**
+!nvim/**
+!home-manager/**
 !README.md
