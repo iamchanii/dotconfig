@@ -1,3 +1,4 @@
+{ user }:
 { config, pkgs, ... }:
 
 {
@@ -12,7 +13,7 @@
   programs.zsh = {
     enable = true;
     shellAliases = {
-      switch = "darwin-rebuild switch --flake ~/.config/nix";
+      switch = "darwin-rebuild switch --flake ~/.config/nix#${user}";
       vim = "nvim";
     };
   };
@@ -20,7 +21,7 @@
   programs.home-manager.enable = true;
 
   home.packages =
-    with pkgs; [ 
+    [ 
       pkgs.vim
       pkgs.neovim
       pkgs.nodejs_22
