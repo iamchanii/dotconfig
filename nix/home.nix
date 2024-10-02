@@ -18,7 +18,6 @@
   };
 
   programs.home-manager.enable = true;
-  programs.home-manager.backupFileExtension = "backup";
 
   home.packages =
     [ 

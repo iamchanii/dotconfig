@@ -35,4 +35,6 @@
     name = user;
     home = "/Users/${user}";
   };
+
+  home-manager.backupFileExtension = "backup";
 }
