@@ -1,0 +1,6 @@
+[
+  "wezterm"
+  "arc"
+  "raycast"
+  "rectangle"
+]   

@@ -1,0 +1,5 @@
+[
+  "starship"
+  "gh"
+  "pinentry"
+]
