@@ -18,7 +18,7 @@
       mkDarwinSystem = { user, modules }:
         nix-darwin.lib.darwinSystem {
           system = "aarch64-darwin";
-          specialArgs = {inherit self; user = user; home-manager = home-manager; };
+          specialArgs = {inherit self; user = user; inputs = inputs; };
           modules = [
             ./darwin.nix
             home-manager.darwinModules.home-manager

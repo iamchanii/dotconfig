@@ -51,4 +51,8 @@
       pkgs.cargo
       pkgs.pinentry_mac
     ];
+
+  home.sessionPath = [
+    "/opt/homebrew/bin"
+  ];
 }

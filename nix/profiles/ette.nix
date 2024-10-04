@@ -1,7 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 let
-  user = home-manager.users.ette;
+  home = inputs.home-manager.users.ette;
 in
 {
+  homebrew.casks = import ../casks.nix ++ ["1password-cli"];
 }
