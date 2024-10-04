@@ -1,9 +1,0 @@
-# tty
-export GPG_TTY=$(tty)
-
-# direnv vscode hack
-if [[ -n "$VSCODE_INJECTION" && -z "$VSCODE_TERMINAL_DIRENV_LOADED" && -f .envrc ]]; then
-    cd ..
-    cd -
-    export VSCODE_TERMINAL_DIRENV_LOADED=1
-fi

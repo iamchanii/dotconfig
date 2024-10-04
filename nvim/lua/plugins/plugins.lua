@@ -20,4 +20,22 @@ return {
       require("mini.misc").setup_termbg_sync()
     end,
   },
+
+  {
+    "akinsho/toggleterm.nvim",
+    version = "*",
+    opts = {
+      open_mapping = [[<c-\>]],
+    },
+  },
+
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "typescript-language-server",
+        "biome",
+      },
+    },
+  },
 }
