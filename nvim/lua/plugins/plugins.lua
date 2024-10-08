@@ -35,6 +35,7 @@ return {
       ensure_installed = {
         "typescript-language-server",
         "biome",
+        "tailwindcss-language-server",
       },
     },
   },
