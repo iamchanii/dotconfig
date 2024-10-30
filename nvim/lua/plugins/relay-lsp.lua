@@ -8,7 +8,7 @@ return {
     },
     setup = {
       relay_lsp = {
-        auto_start_compiler = true,
+        auto_start_compiler = false,
       },
     },
   },
