@@ -3,4 +3,5 @@
   "arc"
   "raycast"
   "rectangle"
+  "slack"
 ]   
