@@ -29,6 +29,7 @@
     enable = true;
     brews = import ./brews.nix;
     casks = import ./casks.nix;
+    taps = import ./taps.nix;
   };
 
   users.users.${user} = {

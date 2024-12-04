@@ -3,4 +3,5 @@
 # 
 [
   "git"
+  "ejoffe/tap/spr"
 ] # Are you read comment?
