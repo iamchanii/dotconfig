@@ -1,6 +1,10 @@
-!nix
-!wezterm
-!nvim
-!home-manager
-!README.md
 *
+!nix
+!nix/**
+!wezterm
+!wezterm/**
+!nvim
+!nvim/**
+!home-manager
+!home-manager/**
+!README.md
