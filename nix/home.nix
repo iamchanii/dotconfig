@@ -48,6 +48,7 @@
     [ 
       pkgs.nodejs_22
       pkgs.pnpm
+      pkgs.yarn-berry
       pkgs.cargo
       pkgs.pinentry_mac
     ];
