@@ -2,6 +2,5 @@
   "wezterm"
   "raycast"
   "rectangle"
-  "slack"
-  "google-chrome"
+  "1password-cli"
 ]   

@@ -34,7 +34,9 @@
     {
       darwinConfigurations.iamchanii = mkDarwinSystem {
         user = "iamchanii";
-        modules = [];
+        modules = [
+          ./profiles/iamchanii.nix
+        ];
       };
 
       darwinConfigurations.ette= mkDarwinSystem {
