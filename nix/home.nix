@@ -56,4 +56,8 @@
   home.sessionPath = [
     "/opt/homebrew/bin"
   ];
+
+  home.file = {
+    ".spr.yml" = { source = ./dotfiles/spr_yml; };
+  };
 }
