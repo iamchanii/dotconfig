@@ -1,5 +1,5 @@
 { user }:
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   home.stateVersion = "24.11";
@@ -11,6 +11,9 @@
         switch = "darwin-rebuild switch --flake ~/.config/nix#${user}";
       };
       initExtra = (builtins.readFile ./dotfiles/zshrc);
+      profileExtra = lib.optionalString (config.home.sessionPath != [ ]) ''
+        export PATH="$PATH''${PATH:+:}${lib.concatStringsSep ":" config.home.sessionPath}"
+      '';
     };
 
     direnv = {
