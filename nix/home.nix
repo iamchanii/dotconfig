@@ -48,12 +48,13 @@
   };
 
   home.packages =
-    [ 
-      pkgs.nodejs_22
-      pkgs.pnpm
-      pkgs.yarn-berry
-      pkgs.cargo
-      pkgs.pinentry_mac
+    with pkgs; [ 
+      nodejs_22
+      pnpm
+      yarn-berry
+      cargo
+      pinentry_mac
+      lazygit
     ];
 
   home.sessionPath = [
