@@ -8,5 +8,6 @@ in
     "slack"
     "google-chrome"
     "1password"
+    "orbstack"
   ];
 }
