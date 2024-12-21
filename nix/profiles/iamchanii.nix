@@ -7,5 +7,6 @@ in
   homebrew.casks = import ../casks.nix ++ [
     "slack"
     "google-chrome"
+    "1password"
   ];
 }

@@ -1,3 +1,3 @@
 [
-  "ejoffe/homebrew-tap"
+# n/a
 ]
