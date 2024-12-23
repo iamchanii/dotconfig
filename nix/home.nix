@@ -55,6 +55,7 @@
       cargo
       pinentry_mac
       lazygit
+      fzf
     ];
 
   home.sessionPath = [
