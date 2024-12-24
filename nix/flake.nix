@@ -2,7 +2,7 @@
   description = "My system configuration";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "git+https://github.com/NixOS/nixpkgs?shallow=1&ref=nixpkgs-unstable";
     nix-darwin = {
       url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -27,6 +27,8 @@
               home-manager.useUserPackages = true;
               home-manager.verbose = true;
               home-manager.users.${user} = import ./home.nix { user = user; };
+
+              homebrew.global.lockfiles = true;
             }
           ] ++ modules;
         };
@@ -35,14 +37,14 @@
       darwinConfigurations.iamchanii = mkDarwinSystem {
         user = "iamchanii";
         modules = [
-          ./profiles/iamchanii.nix
+          ./profiles/iamchanii/home.nix
         ];
       };
 
       darwinConfigurations.ette= mkDarwinSystem {
         user = "ette";
         modules = [
-          ./profiles/ette.nix
+          ./profiles/ette/home.nix
         ];
       };
     };
