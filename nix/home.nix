@@ -12,7 +12,7 @@
       };
       initExtra = (builtins.readFile ./dotfiles/zshrc);
       profileExtra = lib.optionalString (config.home.sessionPath != [ ]) ''
-        export PATH="$PATH''${PATH:+:}${lib.concatStringsSep ":" config.home.sessionPath}"
+        export PATH="${lib.concatStringsSep ":" config.home.sessionPath}''${PATH:+:}$PATH"
       '';
     };
 
