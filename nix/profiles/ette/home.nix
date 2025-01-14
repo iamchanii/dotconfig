@@ -6,7 +6,7 @@ in
 {
   homebrew.casks = import ../../casks.nix ++ [];
 
-  homebrew.taps = import ../../taps.nix ++ ["tailcallhq/tailcall"];
+  homebrew.taps = import ../../taps.nix ++ [];
 
-  homebrew.brews = import ../../brews.nix ++ ["tailcall"];
+  homebrew.brews = import ../../brews.nix ++ ["withgraphite/tap/graphite"];
 }
