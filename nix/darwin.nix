@@ -30,6 +30,13 @@
     brews = import ./brews.nix;
     casks = import ./casks.nix;
     taps = import ./taps.nix;
+    global = {
+      brewfile = true;
+      lockfiles = true;
+    };
+    onActivation = {
+      upgrade = true;
+    };
   };
 
   users.users.${user} = {
