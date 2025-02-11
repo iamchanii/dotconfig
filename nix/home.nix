@@ -49,7 +49,7 @@
 
   home.packages =
     with pkgs; [ 
-      nodejs_22
+      nodejs_23
       pnpm
       yarn-berry
       cargo
