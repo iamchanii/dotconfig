@@ -8,7 +8,7 @@
     zsh = {
       enable = true;
       shellAliases = {
-        switch = "darwin-rebuild switch --flake ~/.config/nix#${user}";
+        switch = "sudo darwin-rebuild switch --flake ~/.config/nix#${user}";
       };
       initContent = (builtins.readFile ./dotfiles/zshrc);
       profileExtra = lib.optionalString (config.home.sessionPath != [ ]) ''
