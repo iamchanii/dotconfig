@@ -49,7 +49,8 @@
 
   home.packages =
     with pkgs; [ 
-      nodejs_23
+      nodejs_24
+      mise
       pnpm
       yarn-berry
       cargo
@@ -63,6 +64,5 @@
   ];
 
   home.file = {
-    ".spr.yml" = { source = ./dotfiles/spr_yml; };
   };
 }
