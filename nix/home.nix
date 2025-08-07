@@ -10,7 +10,7 @@
       shellAliases = {
         switch = "darwin-rebuild switch --flake ~/.config/nix#${user}";
       };
-      initExtra = (builtins.readFile ./dotfiles/zshrc);
+      initContent = (builtins.readFile ./dotfiles/zshrc);
       profileExtra = lib.optionalString (config.home.sessionPath != [ ]) ''
         export PATH="${lib.concatStringsSep ":" config.home.sessionPath}''${PATH:+:}$PATH"
       '';

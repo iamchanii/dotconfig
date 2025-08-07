@@ -8,3 +8,5 @@ if [[ -n "$VSCODE_INJECTION" && -z "$VSCODE_TERMINAL_DIRENV_LOADED" && -f .envrc
     export VSCODE_TERMINAL_DIRENV_LOADED=1
 fi
 
+# mise 
+echo 'eval "$(mise activate zsh)"' >> ~/.zshrc

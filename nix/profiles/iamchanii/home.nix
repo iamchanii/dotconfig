@@ -4,6 +4,8 @@ let
   home = inputs.home-manager.users.ette;
 in
 {
+  system.primaryUser = "iamchanii";
+
   homebrew.casks = import ../../casks.nix ++ [
     "slack"
     "google-chrome"
