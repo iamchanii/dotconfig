@@ -11,4 +11,12 @@ config.font = wezterm.font_with_fallback({
 	"GalmuriMono11",
 })
 
+config.keys = {
+  {
+    key = 'Enter',
+    mods = 'SHIFT',
+    action = wezterm.action.SendString '\\\n'
+  }
+}
+
 return config
