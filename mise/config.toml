@@ -1,0 +1,10 @@
+[tools]
+1password = "2.30.3"
+fzf = "0.65.1"
+github-cli = "2.76.2"
+lazygit = "0.54.2"
+neovim = "0.11.3"
+node = "24.4.1"
+pnpm = "10.14.0"
+ripgrep = "14.1.1"
+starship = "1.23.0"
