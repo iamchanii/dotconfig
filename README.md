@@ -4,21 +4,12 @@ My personal `.config`
 
 ## Requirements
 
-1. [Homebrew](https://brew.sh/)
-2. [Nix](https://nix.dev/manual/nix/2.24/installation/installing-binary)
+1. [Mise](https://mise.jdx.dev/)
 
-## Getting Started
-
-Clone this repository into `~/.config`.
+## Setup
 
 ```
 $ git clone https://github.com/iamchanii/dotconfig ~/.config
+$ mise install
+$ ln -s ~/.config/.zshrc ~/.zshrc
 ```
-
-Install nix-darwin. Follow the command below:
-
-```
-$ nix run nix-darwin -- switch --flake ~/.config/nix#iamchanii
-```
-
-
