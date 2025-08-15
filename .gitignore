@@ -10,6 +10,7 @@
 !home-manager
 !home-manager/**
 !README.md
+!.zshrc
 
 .DS_Store
 **/.DS_Store
