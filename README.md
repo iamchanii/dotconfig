@@ -12,4 +12,5 @@ My personal `.config`
 $ git clone https://github.com/iamchanii/dotconfig ~/.config
 $ mise install
 $ ln -s ~/.config/.zshrc ~/.zshrc
+$ ln -s ~/.config/claude ~/.claude
 ```
