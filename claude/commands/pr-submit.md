@@ -1,6 +1,6 @@
 ---
 description: 변경 사항을 커밋하고 PR을 생성하거나 수정합니다.
-allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git commit:*), Bash(gh pr:*)
+allowed-tools: Bash(git:*), Bash(gh:*)
 ---
 
 현재 브랜치의 작업 내용을 커밋하고 PR을 생성하세요.
