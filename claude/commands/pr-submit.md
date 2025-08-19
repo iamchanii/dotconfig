@@ -1,12 +1,12 @@
 ---
 description: 변경 사항을 커밋하고 PR을 생성하거나 수정합니다.
-allowed-tools: Bash(git:*), Bash(gh:*), Bash(gh pr create), Bash(git push)
+allowed-tools: Bash(git:*), Bash(gh:*), Bash(gh pr create:*), Bash(gh pr edit:*), Bash(git push)
 ---
 
 현재 브랜치의 작업 내용을 커밋하고 PR을 생성하세요.
 
 다음 단계를 따르세요:
-1. git status 및 git diff 를 사용하여 변경 내용을 확인합니다.
+1. git diff origin/main 를 사용하여 변경 내용을 확인합니다.
 2. 커밋 메세지 작성합니다.
   - 커밋 메세지는 컨벤셔널 커밋 규칙을 따라서 작성합니다. (예시: feat: blabla, fix: blabla, refactor: blabla)
   - 커밋 메세지는 한국어로 작성해주세요.
