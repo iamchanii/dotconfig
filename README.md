@@ -14,9 +14,3 @@ $ mise install
 $ ln -s ~/.config/.zshrc ~/.zshrc
 ```
 
-## Link Claude Code Slash Commands
-
-```
-$ rm -rf ~/.claude/commands
-$ ln -s ~/.config/claude/commands ~/.claude/commands
-```
